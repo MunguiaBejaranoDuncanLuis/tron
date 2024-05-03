@@ -19,7 +19,7 @@ int main(int argc, char const *argv[])
         this_thread::sleep_for(0.1s);
 
         pantalla.PixelAt(x,5).character = "Hola";
-        pantalla.PixelAt(x,6).character = moto.txt;
+        pantalla.PixelAt(x,6).hyperlink = moto.txt;
 
         pantalla.Print();
         cout<<pantalla.ResetPosition();
